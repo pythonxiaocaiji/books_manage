@@ -64,8 +64,10 @@ class BooksRemindView(APIView):
 
     def get(self,request):
         user = request.user
+        # 获取当前用户借阅超期提醒
         remind_list = conn_redis(11).get(str(user.id))
         if remind_list:
+            # 消耗掉redis中的超时提醒数据
             conn_redis(11).delete(str(user.id))
             remind_list = eval(remind_list)
         else:
