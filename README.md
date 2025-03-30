@@ -234,8 +234,10 @@ uid = root
 gid = root
 ```
 
-### 6. 接口文件连接
+### 6. 接口文档连接和项目地址
 ```shell script
+# 接口文档
 链接: https://apifox.com/apidoc/shared-5c1ca92c-fc57-4971-8af5-82294ba77b71?pwd=w2DkE7To  访问密码: w2DkE7To
-
+# 项目地址
+https://github.com/pythonxiaocaiji/books_manage
 ```
